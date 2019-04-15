@@ -5,7 +5,7 @@ Created using [typescript-library-starter](https://github.com/alexjoverm/typescr
 Example Usage:
 ```javascript
 
-import axios from 'axios'
+const axios = require('axios')
 const {
   // createCosmosAddress,
   sign,
