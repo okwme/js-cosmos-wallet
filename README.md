@@ -30,13 +30,13 @@ async submitTransaction(tx) {
   // send tx
   return await axios
     .post(
-      process.env.restEndpoint + '/txs',
+      process.env.NODE_ENDPOINT + '/txs',
       body
     )
 }
 
 async function getMetadata () {
-  let response = await axios.get(process.env.restEndpoint + '/auth/accounts/' + process.env.ADDRESS)
+  let response = await axios.get(process.env.NODE_ENDPOINT + '/auth/accounts/' + process.env.ADDRESS)
   return response.data.value
 }
 
