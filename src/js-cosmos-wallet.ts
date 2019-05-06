@@ -83,12 +83,6 @@
     if (typeof jsonTx !== `object`) {
       return jsonTx
     }
-
-  // Check for type / value keys
-  if (Object.keys(jsonTx).length === 2 && jsonTx['type'] !== undefined && jsonTx['value'] !== undefined) {
-    // remove this layer of hierarchy, process value only
-    jsonTx = jsonTx.value
-  }
   
     let sorted = {}
     Object.keys(jsonTx)
